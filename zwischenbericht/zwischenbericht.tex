@@ -34,13 +34,11 @@
 
 \usepackage[ngerman]{babel} % Anführungszeichen Björn
 
-\newcommand*{\say}[1]{%
-    \glqq{}#1\grqq{}
-}
+\newcommand{\quotationMarkGerman}[1]{\glqq{}#1\grqq{}}
 
 \newcommand{\topic}{Zwischenbericht: Pathogensuche mit NGS}
 \newcommand{\authorA}{Björn Emanuel Fürtges}
-\newcommand{\indexTerms}{Agile Methoden, Projektbericht, RFV, Reit- und Fahrverein}
+\newcommand{\indexTerms}{mNGS, Pathogen Detection, Nachweis von Krankheitserregern}
 
 
 
@@ -58,7 +56,7 @@
 }
 
 \author{\IEEEauthorblockN{\authorA}
-\IEEEauthorblockA{\textit{FB4 Informatik, Kommunikation und Wirtschaft, Master Angewandte Informatik} \\
+\IEEEauthorblockA{\textit{FB4 Informatik, Kommunikation und Wirtschaft: Master Angewandte Informatik} \\
 \textit{Hochschule für Technik und Wirtschaft Berlin}\\
 Berlin, Deutschland \\
 Bjoern.Fuertges@Student.HTW-Berlin.de}
@@ -67,18 +65,37 @@ Bjoern.Fuertges@Student.HTW-Berlin.de}
 \maketitle
 
 \begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
+Dieser Zwischenbericht ist ein kurzer Zwischenstand zur Seminararbeit zu dem Thema \quotationMarkGerman{Pathogensuche mit NGS}. mNGS können zur Suche von Krankheitserregern verwendet werden und versprechen dabei zuverlässigere Ergebnisse als \quotationMarkGerman{klassische} Methoden.
 \end{abstract}
 
 \begin{IEEEkeywords}
-component, formatting, style, styling, insert.
+\indexTerms
 \end{IEEEkeywords}
 
-\section{Introduction}
-\cite{AVBacklog}
+\section{Einleitung}
+Durch metagenomic next-generation sequencing (mNGS) können Infektionen des zentralen Nervensystems (ZNS) diagnostiziert werden \cite{clinicalMetagenomicNextGenerationSequencing}. Durch diese Methode können sowohl seltene als auch unbekannte Pathogene gefunden werden \cite{clinicalMetagenomicNextGenerationSequencing}.
 
+\section{Vorteile und derzeitige Limitierungen}
+\subsection{Vorteile}
+Mittels mNGS können sowohl neue als auch bekannte Pathogene identifiziert werden, wenn dies nicht mittels anderer, großflächiger angewendete, diagnosische Verfahren möglich ist \cite{clinicalMetagenomicNextGenerationSequencing}. Außerdem liefert das Verfahren auch Geninformationen über Pathogene, welche in der weiteren Forschung zu diesen verwendet werden kann \cite{clinicalMetagenomicNextGenerationSequencing}. Deshalb kommt mNGS vor allem dann zur Anwendung, wenn diese \quotationMarkGerman{klassische} Methoden keine oder ungenaue Ergebnisse liefern \cite{weiGuSteveMillerCharlesChiuMNGSPathogenDetection}.
+
+\subsection{Derzeitige Limitierungen}
+Kontaminationen, unzureichende Datenbanken und die Komplexität der Datenanalyse können die Auswertung der Befunde anfällig für Fehlinterpretationen machen \cite{clinicalMetagenomicNextGenerationSequencing} \cite{weiGuSteveMillerCharlesChiuMNGSPathogenDetection}. Außerdem sind die Kosten für das Verfahren sehr hoch \cite{clinicalMetagenomicNextGenerationSequencing} \cite{weiGuSteveMillerCharlesChiuMNGSPathogenDetection} bei gleichzeitig langen Auswerungszeiten (1-3 Wochen) \cite{clinicalMetagenomicNextGenerationSequencing} und einer begrenzten Verfügbarkeit \cite{clinicalMetagenomicNextGenerationSequencing}. Gleichzeitig soll noch einmal auf die hohe Bedeutung der Referenzdatenbanken hingewiesen werden: Sollten diese unvollständig sein, können Pathogene unter Umständen nicht erkannt werden oder zumindest die Erkennung dieser erschwert werden.
+
+\section{Derzeitige klinische Bedeutung}
+In den beiden wissenschaftlichen Arbeiten von LingHui David Su et~al. \cite{clinicalMetagenomicNextGenerationSequencing} und von Wei Gu et~al. \cite{weiGuSteveMillerCharlesChiuMNGSPathogenDetection} wird beschrieben, dass mNGS meistens als letzte diagnostische Möglichkeit gesehen und so eingesetzt wird. Dennoch müssten noch weitere klinische Studien durchgeführt werden, um die bisherigen Ergebnisse zu validieren.
+
+\section{Identifikation von möglichen Themen für die Seminararbeit}
+Nachfolgend werden einige Themengebiete genannt, welche für eine Seminararbeit in Betracht gezogen werden könnten. Dies ist keine abschließende Aufzählung an möglichen Themen.
+
+\paragraph{Datenverarbeitung}
+Im Rahmen der Seminararbeit könnten Methoden gesammelt werden, welche die Datenverarbeitung betreffen. Dabei geht es sowohl um die Analyse der mNGS-Daten als auch um die unterschiedlichen Verfahren zur Klassifikation der Pathogene.
+
+\paragraph{Referenzdatenbanken}
+Welche Ansätze existieren um Referenzdatenbanken zu verbessern, da sie eine entscheidene Limitierung des Verfahrens darstellen?
+
+\section{Ausblick und Fazit}
+Es konnte nach ersten Literaturrecherchen festgestellt werden, dass mNGS viele Vorteile mit sich bringen, aber derzeit auch noch einigen Limitierungen unterliegen. Außerdem fehlen noch weitere klinische Studien für bessere wissenschaftliche Erkenntnisse. Zum Abschluss wurden zwei Themengebiete zur Vertiefung in einer Seminararbeit vorgestellt, welche in folgenden Besprechungen und möglicherweise in der folgenden Seminararbeit weiter diskutiert und ausgearbeitet werden.
 
 \bibliography{literatur}
 
