@@ -1,0 +1,13 @@
+*.pdf
+*.aux
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.gz
+*.toc
+*(busy)
+*.bbl
